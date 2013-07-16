@@ -21,28 +21,38 @@
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+        
         <title>GmailSharedTasks</title>
     </head>
     <body>
-        <div class="app">
-            <h1>GmailSharedTasks</h1>
-            <input type="button" value="Add To-Do"/>
-            <input type="button" value="Remove Completed Tasks"/>
-            <br/><br/>
-            <table id="dataTable" width="100%" border="1">
- 
-            </table>
-        </div>
+        <div data-role="page">
+        <div data-role="header">
+            <h1>Page Title</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div class="app">
+                <h1>GmailSharedTasks</h1>
+                <input type="button" value="Add To-Do"/>
+                <input type="button" value="Remove Completed Tasks"/>
+                <br/><br/>
+                <table id="dataTable" width="100%" border="1">
+     
+                </table>
+            </div>
+            
+            <script src="phonegap.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript" src="js/jquery.js"></script>
         
-        <script src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+            <script type="text/javascript">
+                app.initialize();
+            </script>
+        </div>
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+        </div>
     </body>
 </html>
